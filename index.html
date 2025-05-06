@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="shopping-container">
+        <h2 class="shopping-header">Shopping list</h2>
+
+
+        <label for="shopping-item">Product: </label>
+        <input data-item class="shopping-item" id="shopping-item" type="text" placeholder="Type item in here :)" required>
+        <button data-item-add class="shopping-add-item"><i class='bx bx-chevron-down'></i></button>
+
+        <div class="shopping-items">
+            <ol data-list class="shopping-list">
+                <li class="shopping-list__listed-item">Tomatoes 
+
+                    <div class="shopping-list__buttons">
+
+                    <button class="shopping-list__btn--remove"><i class='bx bx-x'></i></button><button class="shopping-list__btn--checked"><i class='bx bx-chevron-down'></i></button>
+
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <button class="shopping__btn--clear">clear list</button>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
