@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,20 +16,30 @@ body {
   align-items: center;
 }
 
+.button {
+  cursor: pointer;
+}
+
 .shopping-container {
   padding: 2rem;
   font-size: 2rem;
   border: 1px solid black;
 }
+.shopping-item {
+  margin: 2rem 1rem;
+}
 .shopping-list__listed-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
 }
-.shopping-list__buttons {
-  display: inline-block;
+.shopping-list__listed-item--bought {
+  color: green;
+  background-color: rgba(34, 209, 57, 0.5);
+  text-decoration: line-through;
+  font-style: italic;
 }
-.shopping-list__buttons button {
-  margin: 0.2rem;
-  cursor: pointer;
+.shopping-list__listed-item__buttons {
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */

@@ -16,22 +16,30 @@
 
         <label for="shopping-item">Product: </label>
         <input data-item class="shopping-item" id="shopping-item" type="text" placeholder="Type item in here :)" required>
-        <button data-item-add class="shopping-add-item"><i class='bx bx-chevron-down'></i></button>
+        <button data-item-add class="shopping-add-item button"><i class='bx bx-chevron-down'></i></button>
 
         <div class="shopping-items">
             <ol data-list class="shopping-list">
-                <li class="shopping-list__listed-item">Tomatoes 
+                <li class="shopping-list__listed-item shopping-list__listed-item--bought">Tomatoes
 
                     <div class="shopping-list__buttons">
 
-                    <button class="shopping-list__btn--remove"><i class='bx bx-x'></i></button><button class="shopping-list__btn--checked"><i class='bx bx-chevron-down'></i></button>
+                    <button class="shopping-list__btn--remove button"><i class='bx bx-x'></i></button><button class="shopping-list__btn--checked button"><i class='bx bx-chevron-down'></i></button>
+
+                    </div>
+                </li>
+                <li class="shopping-list__listed-item shopping-list__listed-item--bought">Potatoes
+
+                    <div class="shopping-list__buttons">
+
+                    <button class="shopping-list__btn--remove button"><i class='bx bx-x'></i></button><button class="shopping-list__btn--checked button"><i class='bx bx-chevron-down'></i></button>
 
                     </div>
                 </li>
             </ol>
         </div>
 
-        <button class="shopping__btn--clear">clear list</button>
+        <button data-clear-btn class="shopping__btn--clear button">clear list</button>
 
     </div>
     <script src="main.js"></script>
