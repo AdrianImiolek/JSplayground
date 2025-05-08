@@ -17,6 +17,10 @@ body {
 }
 
 .button {
+  margin: 0 0.5rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -24,15 +28,19 @@ body {
   padding: 2rem;
   font-size: 2rem;
   border: 1px solid black;
+  border-radius: 10px;
 }
 .shopping-item {
   margin: 2rem 1rem;
+  padding: 0.5rem;
 }
 .shopping-list__listed-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .shopping-list__listed-item--bought {
   color: green;
@@ -40,6 +48,26 @@ body {
   text-decoration: line-through;
   font-style: italic;
 }
-.shopping-list__listed-item__buttons {
-  background-color: black;
+.shopping-list__btn--remove {
+  background-color: rgb(236, 68, 68);
+  transition: background-color 0.3s;
+}
+.shopping-list__btn--remove:hover {
+  background-color: rgb(255, 0, 0);
+}
+.shopping-list__btn--checked {
+  background-color: rgb(53, 134, 53);
+  transition: background-color 0.3s;
+}
+.shopping-list__btn--checked:hover {
+  background-color: rgb(68, 255, 68);
+}
+.shopping__btn--clear {
+  margin-top: 2rem;
+  float: right;
+  background-color: rgba(255, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+.shopping__btn--clear:hover {
+  background-color: rgb(255, 0, 0);
 }/*# sourceMappingURL=main.css.map */

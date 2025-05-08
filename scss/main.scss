@@ -17,6 +17,10 @@ body {
 }
 
 .button {
+	margin: 0 0.5rem;
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 10px;
 	cursor: pointer;
 }
 
@@ -25,24 +29,52 @@ body {
 		padding: 2rem;
 		font-size: 2rem;
 		border: 1px solid black;
+		border-radius: 10px;
 	}
 	&-item {
 		margin: 2rem 1rem;
+		padding: 0.5rem;
 	}
 	&-list {
 		&__listed-item {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-            margin: 1rem 0;
+			margin: 1rem 0;
+			padding: 1rem;
+			background-color: rgba(0, 0, 0, 0.3);
 			&--bought {
-                color: green;
+				color: green;
 				background-color: rgba(34, 209, 57, 0.5);
-                text-decoration: line-through;
-                font-style: italic;
+				text-decoration: line-through;
+				font-style: italic;
 			}
-			&__buttons {
-				background-color: black;
+		}
+		&__btn {
+			&--remove {
+				background-color: rgb(236, 68, 68);
+				transition: background-color 0.3s;
+				&:hover {
+					background-color: rgb(255, 0, 0);
+				}
+			}
+			&--checked {
+				background-color: rgb(53, 134, 53);
+				transition: background-color 0.3s;
+				&:hover {
+					background-color: rgb(68, 255, 68);
+				}
+			}
+		}
+	}
+	&__btn {
+		&--clear {
+			margin-top: 2rem;
+			float: right;
+			background-color: rgba(255, 0, 0, 0.5);
+			transition: background-color 0.3s;
+			&:hover {
+				background-color: rgba(255, 0, 0,);
 			}
 		}
 	}
