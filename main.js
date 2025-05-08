@@ -43,22 +43,22 @@ function clearList() {
 	allItems.forEach(item => item.remove());//loop over every element containting this class and remove them
 }
 
-productList.addEventListener("click", (event) => {
-	const buttonRmv = event.target.closest('.shopping-list__btn--remove');
-	if(buttonRmv) {
-		buttonRmv.closest('li').remove();
+productList.addEventListener("click", (event) => { //add an eventListener for the click, listen for the event, with the event.target we pick what to listen for exactly
+	const buttonRmv = event.target.closest('.shopping-list__btn--remove'); //set event for a closest element .shopping-list__btn--remove
+	if(buttonRmv) { //if guards us against the button being null
+		buttonRmv.closest('li').remove(); //remove closest li to the element which's being
 	}
 })
 
-productList.addEventListener("click", (event) => {
-	const buttonCheck = event.target.closest(".shopping-list__btn--checked");
-	if(buttonCheck){
-		buttonCheck.closest("li").classList.add("shopping-list__listed-item--bought");
+productList.addEventListener("click", (event) => { //add an eventListener for the click, listen for the event, with the event.target we pick what to listen for exactly
+	const buttonCheck = event.target.closest(".shopping-list__btn--checked"); //set evemt for a closest element .shopping-list__btn--checked
+	if(buttonCheck){ //if guards us against the button being null
+		buttonCheck.closest("li").classList.add("shopping-list__listed-item--bought");//add a class if we click the button
 	}
 })
 
-product.addEventListener("keydown", (event) => {
-	if(event.key === "Enter"){
+product.addEventListener("keydown", (event) => { //addevent listener on keydown and listen for event
+	if(event.key === "Enter"){ //if event key is enter run the function below
 		addProduct(); //keydown is best used with inputs
 	}
 })
